@@ -3,9 +3,20 @@ language: python
 
 python:
   - 3.6
+  - 3.5
 
 install:
-  - pip install "Nikola[extras]" doctr
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda config --add channels jfear
+  - conda config --add channels conda-forge
+  - conda update -q conda
+  - conda info -a
+  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION nikola doctry
+  - source activate test-environment
 
 script:
   - set -e
@@ -17,3 +28,7 @@ script:
 env:
   global:
     - secure: "y6Imvm0Lr/AXR14zwoTlTs4yfod6uXpzEz8fvfGK3iKpCvPvnUCKBKT03wSTWOrZYw7oxTQCuA9cqFR9UWCjaHGgBUHrQuOektlbhJmnvLYxrg8DcaZ7uzGORgouhlain1vXW2lGO5LJ1DNeYaNG9B6oySl1LcvCnj/vCWvskhqt9SEo9434luJrgQz8V+c2vi8o4MxR7NPwoYp3LAF6he58USprU7Fr0aFVZ10aFq2doH/YEQzll0j0hxaLBpw/DZXzjfe9wcgHeNXCLSh3mA8lOZY24CAHtKLgbg/eAb9uNWZINgxbRGNqbHDTY2LTo3wKGM4u+3i0l5sYM9uFD1tXTt++1tJGmVAxgYUcK/iPFAsBNoU/Q/m0I/SHHnxKluhaeKqlGzLj3Su1jZdT1EJGC65unwsVtoWY8R89uCdG6xn4mfwxW3EXHS32q2CZhwJOXYXjeqjKoKfahNF+n3v9HprkGqNRL4YPopyOnNc/c6u+5916/7NPpTXMQT806BM9F2I70z/YoDfK0nZ6thpJ7YALlhipnXNmPefmK0Ye2gLPRpQQRKG4ZS9KUKCwnD4ebCHt409aNzQoRYJdIe1ZIHQruRmP1Iy6NbkreG8wSx438lgRxJog4cIJevXHbKjCD5MoofGLoj1nD0lXAaRvOYu6IYU4afxsuV1oeCY="
+
+doctr:
+  key-path: deploy_key.enc
+  require-master: true
