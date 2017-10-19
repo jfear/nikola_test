@@ -7,26 +7,26 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://example.com/archive.html</loc>
-  <lastmod>2017-10-19T17:56:00Z</lastmod>
+  <lastmod>2017-10-19T17:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/blog/index.html</loc>
-  <lastmod>2017-10-19T17:56:00Z</lastmod>
+  <lastmod>2017-10-19T17:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/index.html</loc>
-  <lastmod>2017-10-19T17:56:00Z</lastmod>
+  <lastmod>2017-10-19T17:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/pages/bob.html</loc>
-  <lastmod>2017-10-19T17:56:00Z</lastmod>
+  <lastmod>2017-10-19T17:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/pages/my-cool-notebook.html</loc>
-  <lastmod>2017-10-19T17:56:00Z</lastmod>
+  <lastmod>2017-10-19T17:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/pages/test-notebook.html</loc>
-  <lastmod>2017-10-19T17:56:00Z</lastmod>
+  <lastmod>2017-10-19T17:57:00Z</lastmod>
  </url>
 </urlset>
