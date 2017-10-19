@@ -11,7 +11,8 @@ script:
   - set -e
   - cd docs
   - nikola build
-  - doctr deploy . --built-docs output/
+  - cd ..
+  - doctr deploy . --built-docs docs/output/
 
 env:
   global:
