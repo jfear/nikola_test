@@ -11,7 +11,7 @@ script:
   - set -e
   - cd docs
   - nikola build
-  - doctr deploy . --deploy-branch-name gh-pages --built-docs output/
+  - doctr deploy . --built-docs output/
 
 env:
   global:
