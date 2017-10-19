@@ -12,3 +12,7 @@ script:
   - cd docs
   - nikola build
   - doctr deploy . --deploy-branch-name gh-pages --built-docs output/
+
+env:
+  global:
+    - secure: "y6Imvm0Lr/AXR14zwoTlTs4yfod6uXpzEz8fvfGK3iKpCvPvnUCKBKT03wSTWOrZYw7oxTQCuA9cqFR9UWCjaHGgBUHrQuOektlbhJmnvLYxrg8DcaZ7uzGORgouhlain1vXW2lGO5LJ1DNeYaNG9B6oySl1LcvCnj/vCWvskhqt9SEo9434luJrgQz8V+c2vi8o4MxR7NPwoYp3LAF6he58USprU7Fr0aFVZ10aFq2doH/YEQzll0j0hxaLBpw/DZXzjfe9wcgHeNXCLSh3mA8lOZY24CAHtKLgbg/eAb9uNWZINgxbRGNqbHDTY2LTo3wKGM4u+3i0l5sYM9uFD1tXTt++1tJGmVAxgYUcK/iPFAsBNoU/Q/m0I/SHHnxKluhaeKqlGzLj3Su1jZdT1EJGC65unwsVtoWY8R89uCdG6xn4mfwxW3EXHS32q2CZhwJOXYXjeqjKoKfahNF+n3v9HprkGqNRL4YPopyOnNc/c6u+5916/7NPpTXMQT806BM9F2I70z/YoDfK0nZ6thpJ7YALlhipnXNmPefmK0Ye2gLPRpQQRKG4ZS9KUKCwnD4ebCHt409aNzQoRYJdIe1ZIHQruRmP1Iy6NbkreG8wSx438lgRxJog4cIJevXHbKjCD5MoofGLoj1nD0lXAaRvOYu6IYU4afxsuV1oeCY="
